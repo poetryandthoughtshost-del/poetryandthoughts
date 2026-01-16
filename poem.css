@@ -1,0 +1,199 @@
+/* ===== RESET & BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #e6b2499b; /* matches card color */
+    color: #333;
+}
+
+/* ===== CONTAINER ===== */
+.poems-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.poems-container h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #8b5e3c; /* elegant brown/gold tone */
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+}
+
+/* ===== GRID ===== */
+.poems-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+/* ===== CARD ===== */
+.poem-card {
+    background: #f7f3ef; /* same as page for harmony */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 360px; /* equal height */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.poem-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== IMAGE ===== */
+.poem-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+/* ===== TITLE ===== */
+.poem-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #b08a5a; /* warm gold */
+    margin: 10px 0 6px;
+    transition: color 0.3s ease;
+}
+
+.poem-card:hover h3 {
+    color: #8a6a42;
+}
+
+/* ===== GENRE TEXT ===== */
+.poem-card p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #6b6b6b;
+}
+
+/* ===== MODAL ===== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.4s ease;
+}
+
+/* ===== MODAL CONTENT ===== */
+.modal-content {
+    background: #f7f3ef;
+    margin: 4% auto;
+    padding: 45px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 750px;
+    max-height: 82%;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== CLOSE BUTTON ===== */
+.close {
+    position: absolute;
+    right: 22px;
+    top: 16px;
+    font-size: 34px;
+    color: #b08a5a;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.close:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+/* ===== MODAL TITLE ===== */
+#modalTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #b08a5a;
+    margin-bottom: 25px;
+}
+
+/* ===== POEM TEXT ===== */
+#poemText {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 1.9;
+    white-space: pre-line;
+    color: #2f2f2f;
+    text-align: left;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+    .poems-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .poems-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .poems-container h2 {
+        font-size: 32px;
+    }
+
+    #modalTitle {
+        font-size: 26px;
+    }
+
+    #poemText {
+        font-size: 18px;
+    }
+
+    .modal-content {
+        padding: 30px;
+    }
+}
+.poem-card {
+    background: #f7f3ef; /* card color */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 360px; /* equal height */
+    /* Black shadow around corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
