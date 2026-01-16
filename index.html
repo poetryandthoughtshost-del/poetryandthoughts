@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Poetry & Thoughts</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ✅ IMPROVED SEO META TAGS -->
+<meta name="description" content="Poetry & Thoughts is a literary platform for poems, poetry, poets, creative writing, essays and short stories. Explore heartfelt verses and submit your writing.">
+<meta name="keywords" content="poetry, poems, poet, poetry website, literature, creative writing, thoughts, essays, short stories, Nepali poetry">
+<meta name="author" content="Poetry & Thoughts">
+
+<title>Poetry & Thoughts</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="navbar">
@@ -14,129 +23,130 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#featured">Featured</a>
-        <a href="#submission">Submission Guidelines</a>
+        <a href="#submission">Submit</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
-<div class="section-dividers">
+
 <section class="hero" id="home">
     <div class="hero-text">
-       
-        <h1>Welcome to<br>Poetry & Thoughts</h1>
-        <p class="subtitle"><h3><b>"अन्तर मनका भावनाहरु
-मसिद्वारा कागजमा उतार्नु नै साहित्य हो ।"</h3></b></p>
-        <!-- Hidden checkbox -->
-<input type="checkbox" id="toggle-learn-more" class="toggle-hidden">
+        <h1>Poetry & Thoughts</h1>
+        <h3>“अन्तर मनका भावनाहरु मसिद्वारा कागजमा उतार्नु नै साहित्य हो।”</h3>
 
-<label for="toggle-learn-more" class="learn-more-btn">
-    Learn More
-</label>
+        <input type="checkbox" id="toggle-learn" hidden>
+        <label for="toggle-learn" class="btn">Learn More</label>
 
-<!-- Hidden paragraph -->
-<div class="learn-more-text">
-    <p>
-        Poetry & Thoughts is a modern literary platform dedicated to creativity,
-        expression, and meaningful storytelling. We aim to connect writers and
-        readers through words that inspire reflection and imagination.
-    </p>
-</div>
+        <div class="toggle-content">
+            <p>
+                Poetry & Thoughts is a creative literary platform dedicated to poetry,
+                thoughts, essays and storytelling that touch the soul.
+            </p>
+        </div>
     </div>
+
     <div class="hero-image">
-        <img src="background.jpg" alt="Book Image">
+        <img src="background.jpg" alt="Books and poetry">
     </div>
-
-     
-    
 </section>
-</div>
+
+<div class="divider"></div>
+
 <section class="about" id="about">
     <div class="about-text">
         <h2>About Us</h2>
         <p>
-            Poetry & Thoughts is your destination for thoughtful essays, evocative poems,
-            and compelling stories. We celebrate the art of the written word,
-            giving voice to both emerging and established writers.
+            We celebrate poetry and thoughts by connecting writers and readers
+            through meaningful words and emotions.
         </p>
-        <blockquote>
-           <b><i><h4> “यात्रा मेरो घाट सम्मको हो, <br> 
-यात्राको क्रममा कमाउने सबै कुरा केबल मलामी मात्र हुन् ।”</h4></i></b> &nbsp;&nbsp;~ निरोज पराजुली
 
+        <blockquote>
+            “यात्रा मेरो घाट सम्मको हो,<br>
+            यात्राको क्रममा कमाउने सबै कुरा केबल मलामी मात्र हुन्।”<br>
+            <span>— निरोज पराजुली</span>
         </blockquote>
     </div>
+
     <div class="about-image">
-        <img src="author.jpg" alt="Author" class="author-img">
+        <img src="author.jpg" alt="Author portrait">
     </div>
 </section>
+
+<div class="divider"></div>
 
 <section class="featured" id="featured">
     <h2>Featured Writing</h2>
-    <p class="section-subtitle">Dive into our collection of essays, poems, and short stories.</p>
+    <p class="section-subtitle">Explore poems, essays and short stories</p>
 
     <div class="cards">
-        <div class="carda">
-            <img src="essay.jpg" alt="Essays">
+        <div class="card">
+            <img src="essay.jpg" alt="Essay writing">
             <h3>Essays</h3>
-            <p class="author"><h5>Access the Essay by <br><span>clicking Read More</span></h5></span></p>
-           <button onclick="location.href='essay.html'">Read More</button>
+            <p>Thoughtful reflections</p>
+            <a href="essay.html" class="btn">Read More</a>
         </div>
 
-        <div class="carde">
-            <img src="poem.jpg" alt="Poems">
+        <div class="card">
+            <img src="poem.jpg" alt="Poetry book">
             <h3>Poems</h3>
-            <p class="author"><h5>Access the Poem by <br><span>clicking Read More</span></h5></span></p>
-            <button onclick="location.href='poem.html'">Read More</button>
+            <p>Verses from the heart</p>
+            <a href="poem.html" class="btn">Read More</a>
         </div>
 
-        <div class="cardy">
-            <img src="story.jpg" alt="Stories">
+        <div class="card">
+            <img src="story.jpg" alt="Short story">
             <h3>Short Stories</h3>
-            <p class="author"><b><h5>Access the Stories by <br><span>clicking Read More</h5></span></p>
-           <button onclick="location.href='story.html'">Read More</button>
+            <p>Stories that linger</p>
+            <a href="story.html" class="btn">Read More</a>
         </div>
     </div>
 </section>
-<div class="section-divider">
+
+<div class="divider"></div>
+
 <section class="submission" id="submission">
     <h2>Submission Guidelines</h2>
-    <p>We welcome new voices and perspectives. View our guidelines to submit your work for publication.</p>
-    <input type="checkbox" id="toggle-submission">
-    <label for="toggle-submission" class="submission-btn">
-        Submission Guidelines
-    </label>
+    <p>We welcome new voices and perspectives.View our guidelines to Submit and  Share your work for publication.</p>
 
-    <div class="submission-form">
-        <form>
+    <input type="checkbox" id="toggle-submit" hidden>
+    <label for="toggle-submit" class="btn">Submit Your Work</label>
+
+    <div class="toggle-content">
+        <form class="submission-form">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Paste your writing here..." rows="6" required></textarea>
-             <button type="submit">Send Submission</button>
+            <textarea rows="6" placeholder="Paste your writing here..." required></textarea>
+
+            <!-- ✅ CENTERED BUTTON -->
+            <div class="center-btn">
+                <button type="submit">Send Submission</button>
+            </div>
         </form>
     </div>
 </section>
-</div>
-</section>
-<section class="contact" id="contact">
-<footer class="footer">
+
+<div class="divider"></div>
+
+<footer class="footer" id="contact">
     <div class="footer-content">
         <div class="footer-text">
-            <h3>Let’s Talk</h3>
-            <p>Have questions or thoughts to share? We’d love to hear from you.</p>
+            <h2>Contact Us</h2>
 
-            <input type="checkbox" id="toggle-contact">
-            <label for="toggle-contact" class="contact-btn">Contact Us</label>
+            <input type="checkbox" id="toggle-contact" hidden>
+            <label for="toggle-contact" class="btn">Show Contact Info</label>
 
-            <div class="contact-info">
+            <div class="toggle-content">
                 <p>Email: poetryandthoughtss@gmail.com</p>
                 <p>Facebook: Niroj Parajuli</p>
                 <p>Phone: +977 98*******</p>
             </div>
         </div>
 
+        <!-- ✅ IMAGE RESTORED -->
         <div class="footer-image">
-            <img src="lastimg.jpg" alt="Illustration">
+            <img src="lastimg.jpg" alt="Poetry illustration">
         </div>
     </div>
-</section>
+
     <p class="copyright">
         © 2026 Poetry & Thoughts. All rights reserved.
     </p>
@@ -144,3 +154,4 @@
 
 </body>
 </html>
+
